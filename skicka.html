@@ -1,12 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Skicka kort</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+<!-- HEADER/NAV -->
+<header class="header">
+    <div class="header-container">
+        <!-- LOGO -->
+        <div class="logo">Skicka Kort</div>
+
+        <!-- NAV (MITTEN) -->
+        <nav class="nav-center">
+            <ul class="nav-list">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="skicka.html">Skicka kort</a></li>
+                <li><a href="event.html">Håll event</a></li>
+                <li><a href="sjukhus.html">Sjukhus</a></li>
+            </ul>
+        </nav>
+
+        <!-- Ikoner höger -->
+        <div class="nav-icons">
+            <span>👤</span>
+            <span>❤️</span>
+        </div>
+    </div>
+</header>
+
+<!-- Huvud page-header -->
+<section class="page-header">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Skicka ett kort</h2>
+        <p>Följ stegen nedan för att sprida glädje 💌</p>
+    </div>
+</section>
+
+<!-- Steg 1: Välja kort -->
+<section class="container step" id="step1">
+    <h2>Steg 1: Välj kort</h2>
+    <div class="card-grid">
+        <div class="card"><img src="img/RIFLE108.png" alt="Kort 1"></div>
+        <div class="card"><img src="img/RIFLE124.png" alt="Kort 2"></div>
+        <div class="card"><img src="img/RIFLE106.png" alt="Kort 3"></div>
+    </div>
+</section>
+
+<!-- Steg 2: Skriv meddelande -->
+<section class="container step" id="step2">
+    <h2>Steg 2: Skriv meddelande</h2>
+    <div class="message-box">
+        <div>
+           
+            <textarea placeholder="Skriv ditt meddelande här..."></textarea>
+        </div>
+        <img src="img/RIFLE108.png" alt="Kort preview" class="message-image">
+    </div>
+</section>
+
+<!-- Skicka knapp -->
+<button id="send-button">Skicka!</button>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Skicka Kort</p>
+        <p>All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
