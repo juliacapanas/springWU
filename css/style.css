@@ -174,7 +174,7 @@ body {
     margin: 0;
 }
 
-/* HEADER/NAV */
+/* HEADER/NAV (ALLA SIDOR */
 .header {
     background: var(--white);
     margin-bottom: 1px solid white;
@@ -204,5 +204,137 @@ body {
     margin: 0;
 }
 .nav-list a {
-    
+    text-decoration: none;
+    color:var(--text);
+    font-weight: 500;
+}
+.nav-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+/* HUVUD PAGE HEADER */
+.page-header {
+    position:relative;
+    height: 50vh;
+    background-image: url("../img/children.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 0;
+}
+.page-header .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(red, green, blue, alpha);
+}
+.page-header .content {
+    position: relative;
+    z-index: 2;
+}
+.page-header .content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.page-header .content p {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* STEG SYSTEM */
+.step {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.step h2 {
+    margin-bottom: 15px;
+}
+
+/* VÄLJA KORT STEG */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+.card {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.card:hover {
+    transform: scale(1);
+}
+.card:active {
+    border: 2px solid var(--primary);
+}
+
+/* STEG 2 - MEDDELANDE BOX */
+.message-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.message-box select {
+    padding: 10px;
+    border-radius: 10px;
+}
+.message-box textarea {
+    width: 400px;
+    height: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px sold white;
+    resize: none;
+}
+
+/* STEG 2 - BILD PÅ HÖGER*/
+.message-image {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* SKICKA KNAPP */
+#send-button {
+    display: block;
+    width: 80%;
+    max-width: 900px;
+    height: 80px;
+    margin: 20px auto;
+    background: #a0c4ff;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#send-button:hover {
+    background: lightcyan
+}
+
+/* FOOTER */
+.footer {
+    background: white;
+    color: var(--secondary);
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px 10px 00;
 }
