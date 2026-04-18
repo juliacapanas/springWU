@@ -85,7 +85,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgba;
+    background: rgba(0,0,0,0.4);
 }
 .huvud-content {
     position: relative;
@@ -234,7 +234,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(red, green, blue, alpha);
+    background: rgba(0,0,0,0.4);
 }
 .page-header .content {
     position: relative;
