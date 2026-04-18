@@ -5,6 +5,7 @@
     --mobile: white;
     --text: black;
     --soft: #f8f8f8;
+    --white: #ffffff;
 }
 * {
     margin: 0;
@@ -301,7 +302,7 @@ body {
     height: 250px;
     padding: 15px;
     border-radius: 10px;
-    border: 1px sold white;
+    border: 1px solid white;
     resize: none;
 }
 
