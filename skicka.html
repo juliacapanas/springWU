@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skicka kort</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skicka kort</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
 <!-- HEADER/NAV -->
 <header class="header">
-    <div class="header-container">
-        <!-- LOGO -->
-        <div class="logo">Skicka Kort</div>
+  <div class="container header-container">
 
-        <!-- NAV (MITTEN) -->
-        <nav class="nav-center">
-            <ul class="nav-list">
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="skicka.html">Skicka kort</a></li>
-                <li><a href="event.html">Håll event</a></li>
-                <li><a href="sjukhus.html">Sjukhus</a></li>
-            </ul>
-        </nav>
+    <!-- LOGO -->
+    <h1 class="logo">Skicka Kort</h1>
 
-        <!-- Ikoner höger -->
-        <div class="nav-icons">
-            <span>👤</span>
-            <span>❤️</span>
-        </div>
+    <!-- NAV (MITTEN) -->
+    <nav class="nav-center">
+      <ul class="nav-list">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="skicka.html">Skicka kort</a></li>
+        <li><a href="event.html">Håll event</a></li>
+        <li><a href="sjukhus.html">Sjukhus</a></li>
+      </ul>
+    </nav>
+
+    <!-- Ikoner höger -->
+    <div class="nav-icons">
+      <span class="menu-icon">👤</span>
+      <span>❤️</span>
     </div>
+
+    <div class="dropdown-menu">
+      <a href="#">Skickade kort</a>
+      <a href="#">Inställningar</a>
+      <a href="#">Tema</a>
+      <a href="#">Kontakt</a>
+    </div>
+
+  </div>
 </header>
+
+<div class="fade-layer"></div>
 
 <!-- Huvud page-header -->
 <section class="page-header">
-    <div class="overlay"></div>
-    <div class="content">
-        <h2>Skicka ett kort</h2>
-        <p>Följ stegen nedan för att sprida glädje 💌</p>
-    </div>
+  <div class="overlay"></div>
+  <div class="content">
+    <h2>Skicka ett kort</h2>
+    <p>Följ stegen nedan för att sprida glädje 💌</p>
+  </div>
 </section>
 
 <!-- Steg 1: Välja kort -->
 <section class="container step" id="step1">
-    <h2>Steg 1: Välj kort</h2>
-    <div class="card-grid">
-        <div class="card"><img src="img/RIFLE108.png" alt="Kort 1"></div>
-        <div class="card"><img src="img/RIFLE124.png" alt="Kort 2"></div>
-        <div class="card"><img src="img/RIFLE106.png" alt="Kort 3"></div>
-    </div>
+  <h2>Steg 1: Välj kort</h2>
+  <div class="card-grid">
+    <div class="card"><img src="img/RIFLE108.png" alt="Kort 1"></div>
+    <div class="card"><img src="img/RIFLE124.png" alt="Kort 2"></div>
+    <div class="card"><img src="img/RIFLE107.jpg" alt="Kort 3"></div>
+  </div>
 </section>
 
 <!-- Steg 2: Skriv meddelande -->
 <section class="container step" id="step2">
-    <h2>Steg 2: Skriv meddelande</h2>
-    <div class="message-box">
-        <div>
-           
-            <textarea placeholder="Skriv ditt meddelande här..."></textarea>
-        </div>
-        <img src="img/RIFLE108.png" alt="Kort preview" class="message-image">
+  <h2>Steg 2: Skriv meddelande</h2>
+  <div class="message-box">
+    <div>
+      <textarea placeholder="Skriv ditt meddelande här..."></textarea>
     </div>
+    <img src="img/RIFLE108.png" alt="Kort preview" class="message-image">
+  </div>
 </section>
 
 <!-- Skicka knapp -->
@@ -68,12 +80,32 @@
 
 <!-- Footer -->
 <footer class="footer">
-    <div class="container">
-        <p>© 2026 Skicka Kort</p>
-        <p>All rights reserved.</p>
-    </div>
-</footer>
+  <div class="container footer-container">
 
-<script src="script.js"></script>
+    <div class="footer-social">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+
+    <div class="footer-links">
+      <span>Home</span>
+      <span>About</span>
+      <span>FAQ</span>
+      <span>Terms</span>
+      <span>Privacy</span>
+      <span>Blog</span>
+    </div>
+
+    <div class="footer-contact">
+      <button class="footer-btn">Get in touch</button>
+    </div>
+
+    <p class="footer-copy">© 2026 Skicka Kort</p>
+
+  </div>
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,75 +1,112 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skicka kort</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sjukhus</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
- <!-- Header -->
-  <header class="header">
-    <div class="container header-container">
-         <h1 class="logo">Skicka Kort</h1>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="index.html">Hem</a></li>
-                    <li><a href="skicka.html">Skicka kort</a></li>
-                    <li><a href="event.html">Håll event</a></li>
-                    <li><a href="sjukhus.html">Sjukhus</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-</html>
 
-<!-- Header text -->
- <section class="page-header">
-    <h2>Sjukhus och adresser</h2>
-    <p>Här får du ditt information om vart du skickar dina kort</p>
-  
-<!-- Sjukhus info -->
- <section class="sjukhus">
-    <div class="container sjukhus-grid">
+<header class="header">
+  <div class="container header-container">
 
- <!-- Sjukhus kort -->
+    <h1 class="logo">Skicka Kort</h1>
+
+    <nav class="nav-center">
+      <ul class="nav-list">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="skicka.html">Skicka kort</a></li>
+        <li><a href="event.html">Håll event</a></li>
+        <li><a href="sjukhus.html">Sjukhus</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-icons">
+      <span class="menu-icon">👤</span>
+      <span>❤️</span>
+    </div>
+
+    <div class="dropdown-menu">
+      <a href="#">Skickade kort</a>
+      <a href="#">Inställningar</a>
+      <a href="#">Tema</a>
+      <a href="#">Kontakt</a>
+    </div>
+
+  </div>
+</header>
+
+<section class="page-header">
+  <h2>Sjukhus och adresser</h2>
+  <p>Här får du information om vart du skickar dina kort</p>
+</section>
+
+<section class="sjukhus">
+  <div class="container sjukhus-grid">
+
     <div class="sjukhus-card">
-     <img src="img/hospital.jpg" alt="Sjukhus">
-     <h3>Drottning Silvias barnsjukhus</h3>
-     <p><strong>Adress:</strong><br>
-                416 85 Göteborg</p>
+      <img src="img/RIFLE.010.jpg" alt="DOrttning Silvias barnsjukhus">
+      <h3>Drottning Silvias barnsjukhus</h3>
+      <p><strong>Adress:</strong><br>416 85 Göteborg</p>
+    </div>
 
-    <p><strong>Viktigt att tänka på:</strong></p>
-                <ul>
-                    <li>Inget glitter</li>
-                    <li>Snälla meddelanden</li>
-                    <li>Inga personliga kontaktuppgifter</li>
-                </ul>
-            </div>
+    <div class="sjukhus-card">
+      <img src="img/RIFLE.011.jpg" alt="Karolinska Universitetssjukhuset">
+      <h3>Karolinska Universitetssjukhuset</h3>
+      <p><strong>Adress:</strong><br>171 76 Stockholm</p>
+    </div>
 
-        </div>
-    </section>
+    <div class="sjukhus-card">
+      <img src="img/RIFLE.012.jpg" alt="Skånes Universitetssjukhus">
+      <h3>Skånes Universitetssjukhus</h3>
+      <p><strong>Adress:</strong><br>221 85 Lund</p>
+    </div>
 
-<!-- Extra info -->
-    <section class="extra-info">
-        <div class="container">
+  </div>
+</section>
 
-            <h3>Hur du skickar ditt kort</h3>
-            <ol>
-                <li>Rita eller skriv ditt kort</li>
-                <li>Lägg det i ett kuvert</li>
-                <li>Skriv adressen tydligt</li>
-                <li>Posta brevet</li>
-            </ol>
+<section class="extra-info">
+  <div class="container">
+    <h3>Hur du skickar ditt kort</h3>
+    <ol>
+      <li>Rita eller skriv ditt kort</li>
+      <li>Lägg det i ett kuvert</li>
+      <li>Skriv adressen tydligt</li>
+      <li>Posta brevet</li>
+    </ol>
+  </div>
+</section>
 
-        </div>
-    </section>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-container">
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2026 Skicka Kort</p>
-    </footer>
+    <div class="footer-social">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
 
+    <div class="footer-links">
+      <span>Home</span>
+      <span>About</span>
+      <span>FAQ</span>
+      <span>Terms</span>
+      <span>Privacy</span>
+      <span>Blog</span>
+    </div>
+
+    <div class="footer-contact">
+      <button class="footer-btn">Get in touch</button>
+    </div>
+
+    <p class="footer-copy">© 2026 Skicka Kort</p>
+
+  </div>
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>
- </section>
