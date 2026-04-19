@@ -1,18 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const menu = document.querySelector(".dropdown-menu");
-  const icon = document.querySelector(".menu-icon");
-  const overlay = document.querySelector(".fade-layer");
+  const icon = document.querySelector(".hamburger-trigger");
 
-  if (!menu || !icon || !overlay) return;
+  if (!menu || !icon) return;
 
-  icon.addEventListener("click", function (e) {
-    e.stopPropagation();
+  icon.addEventListener("click", function () {
     menu.classList.toggle("active");
-    overlay.classList.toggle("active");
-  });
-
-  overlay.addEventListener("click", function () {
-    menu.classList.remove("active");
-    overlay.classList.remove("active");
   });
 });
